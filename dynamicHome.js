@@ -42,6 +42,10 @@ fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q="+query, {
                 newMorningSectionNode.id= `${obj.album.id}`
                 newMorningSectionNode.innerHTML = `<img  src="${obj.album.cover_small}" width="70" height="70" alt="">
                 <p class="text_clamp_1 my-0">${obj.album.title}</p>`
+
+                newMorningSectionNode.onClick = () => {
+                  window.location.assign("./album_page.html?id=" + obj.album.id)
+                }
                 
                 document.querySelector(".d-inline-flex.good_morning_container").appendChild(newMorningSectionNode)
             }
@@ -105,6 +109,9 @@ fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q="+query, {
                   <p class="text_clamp_2">${obj.artist.name}</p>
                 </div>
               </div>`
+              newRecentlyPlayedNode.onClick = () => {
+                window.location.assign("./album_page.html?id=" + obj.album.id)
+              }
                 
                 document.querySelector(".recently-played-container").appendChild(newRecentlyPlayedNode)
             }
@@ -169,6 +176,10 @@ fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q="+query, {
                   <p class="text_clamp_2">${obj.artist.name}</p>
                 </div>
               </div>`
+              showsToTryNode.onClick = () => {
+                window.location.assign("./album_page.html?id=" + obj.album.id)
+              }
+              
                 
                 document.querySelector(".shows-to-try-container").appendChild(showsToTryNode)
             }
@@ -181,28 +192,6 @@ fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q="+query, {
 
 }
 //  END of the Shows To Try Section
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
