@@ -89,7 +89,7 @@ fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q="+query, {
         document.querySelector("#main-container").appendChild(recentlyPlayedSection)
 
 
-        for (let i = 0; i < 9; i++) {
+        for (let i = 0; i < 11; i++) {
             let obj = body.data[i];
                 
             let newRecentlyPlayedNode = document.createElement("div")
@@ -153,7 +153,7 @@ fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q="+query, {
         document.querySelector("#main-container").appendChild(recentlyPlayedSection)
 
 
-        for (let i = 0; i < 9; i++) {
+        for (let i = 0; i < 11; i++) {
             let obj = body.data[i];
                 
             let showsToTryNode = document.createElement("div")
