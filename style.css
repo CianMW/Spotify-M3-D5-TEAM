@@ -1,0 +1,737 @@
+/* BODY AND MAIN SECTION RELATED PRESETS */
+/* EG. GRADIENT OR BACKGROUND IMAGE */
+body {
+  height: 100vh;
+  background: rgb(0,0,0);
+  overflow:hidden;
+  font-family: 'Montserrat';
+  font-weight: 500;
+}
+
+/* MAIN SECTION TYPOGRAPHY */
+/* HEADERS AND SUB-HEADERS */
+
+h3,h3+p,h6 {
+  color: #ffffff;
+}
+
+h3+p {
+  font-size: 0.9rem;
+}
+
+.container-fluid {
+  min-width: 650px;
+}
+
+
+/* LEFT-NAVIGATION AREA */
+.col-3 {
+  /* Maybe adjust later */
+  min-width: 250px;
+  max-width: 250px;
+}
+
+.left_navbar{
+    background-color: #000000;
+    color: #828282;
+    max-width: 250px;
+    height: 100vh;
+}
+
+.left_nav_icons {
+  font-size: 1.6rem;
+}
+.left_nav_icons+p {
+  font-size: 1rem;
+}
+
+.spotify_logo{
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+}
+.spotify_logo_section:hover{
+cursor:pointer;
+}
+
+.spotify_logo_section{
+  display: flex;
+  justify-content: right;
+}
+.spotify_logo + p{
+  color: white;
+  font-size:xx-large;
+  font-weight:bold;
+}
+.navbar_main_section .active{
+  background-color: grey;
+  color: white;
+  border-radius: 3px;
+}
+.spotify_logo_section sup {
+  font-size: small;
+  position: relative;
+  top: -0.8rem;
+  left: 1px;
+}
+.sidebar_search{
+  transition-duration: 0.5s;
+}
+.navbar_main_section .sidebar_search:hover{
+  color:white;
+  cursor: pointer
+}
+.sidebar_home{
+  transition-duration: 0.5s;
+
+}
+.navbar_main_section .sidebar_home:hover{
+  color:white;
+  cursor: pointer;
+  font-weight: medium;
+}
+
+.sidebar_library{
+  transition-duration: 0.5s;
+}
+
+.navbar_main_section .sidebar_library:hover{
+  color:white;
+  cursor: pointer
+}
+.sidebar_create_playlist{
+  transition-duration: 0.5s;
+}
+.navbar_main_section .sidebar_create_playlist:hover{
+  color:white;
+  cursor: pointer
+}
+
+
+.playlist_icon{
+font-size: larger;
+}
+
+
+.navbar_main_section .sidebar_liked_songs:hover{
+  color:white ;
+  cursor: pointer
+}
+.navbar_main_section .liked_song_icon:hover{
+  color:white ;
+  cursor: pointer
+}
+
+.liked_song_icon {
+background: linear-gradient(135deg,#450af5,#c4efd9);
+border-radius: 2px;
+height: 25px;
+width: 25.61px;
+text-align: center;
+position: relative;
+}
+
+.liked_song_icon .bi-heart-fill{
+font-size:small;
+color:lightgrey;
+position: relative;
+top: 1px;
+}
+
+/* PSEUDO-ELEMENT STYLING RELATED TO SCROLL-BAR */
+::-webkit-scrollbar {
+  width: .8em
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(90, 90, 90);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(141, 141, 141);
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+.user_playlist{
+    overflow: auto;
+    height: calc(100vh - 428px);
+}
+
+.user_playlist p:hover{
+  color:white ;
+  cursor: pointer
+}
+
+.playlist_border_top {
+  border-top: 1px solid rgb(100, 100, 100);
+}
+.download_app_section{
+  transition-duration: 0.5s;
+}
+
+.download_app_section:hover{
+  color: white;
+  cursor: pointer;
+}
+
+/* TYPOGRAPHY - TEXT CLAMP */
+.text_clamp_1,
+.text_clamp_2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.text_clamp_2 {
+  -webkit-line-clamp: 2;
+}
+
+/* MAIN SECTION */
+
+.col {
+  overflow: auto;
+}
+
+.col>.row {
+  min-width: 450px;
+  height: calc(100vh - 80px);
+  overflow-y: scroll;
+}
+
+.wrapper-main {
+  position: absolute;
+}
+
+.col {
+  background: linear-gradient(0deg, rgba(0,0,0,1) 85%, rgba(116,15,51,1) 100%);
+}
+
+/* TOP-NAVIGATION, ARROWS AND PROFILE BUTTON */
+
+.nav-arrow-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #20202081;
+  border-radius: 50%;
+}
+.arrow_icon {
+  color: #fff;
+  font-size: 1.125rem;
+}
+
+.avatar-pill {
+  background:#000000;
+  color: white;
+}
+
+.profile_picture{
+    border-radius: 50%;
+}
+
+/* GOOD MORNING SECTION */
+
+
+.good_morning_section {
+    background: rgba(126, 126, 126,0.2);
+    width: 350px;
+    border-radius: 3px;
+    transition-duration: 0.6s;
+}
+
+@media (max-width: 1020px) {
+  .col-12 {
+    width: 100%;
+  }
+  .good-morning-container {
+    width: 100%;
+  }
+  .good_morning_section {
+    width: 95%
+  }
+
+}
+
+
+.good_morning_section img {
+  margin-right: 0.8rem;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.good_morning_section p {
+  color: #ecebe8;
+}
+
+div.good_morning_section:hover{
+  background: rgb(47,47,47);
+  cursor: pointer;
+  /* transform: scale(1.2); */
+}
+
+
+/* CONTAINER RELATED BASE STYLING FOR SECTIONS */
+.good_morning_container,
+.recently-played-container,
+.shows-to-try-container {
+  display: inline-flex; 
+  flex-wrap: wrap; 
+  gap: 1rem;
+}
+
+/* CARD STYLING - USED WITHIN RECENTLY PLAYED AND SHOWS TO TRY SECTION */
+
+.spotify-card {
+  width: 140px;
+  max-width: 140px;
+  background-color: #3636362f;
+}
+
+.spotify-card img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 120px;
+}
+
+.spotify-card h6 {
+  color: #ecebe8;
+}
+
+.spotify-card p {
+  font-size: 0.8rem;
+  color: #828282; 
+}
+.spotify-card:hover{
+  cursor: pointer;
+  background-color:rgb(47, 47, 47);
+  /* transform: scale(1.2); */
+}
+.spotify-card{
+  transition-duration: 0.6s;
+}
+
+/* CUSTOM LIKED SONGS CARD */
+
+.liked-songs {
+  background: rgb(97,33,215);
+  background: linear-gradient(150deg, rgba(97,33,215,1) 5%, rgba(255,255,255,1)   100%);
+  width: 100%;
+  height: 120px;
+  max-height: 120px;
+}
+.liked-songs .bi-heart-fill {
+  color: white;
+  font-size: 3rem;
+}
+
+/* IMG CUSTOMIZED FOR SHOWS TO TRY SECTION */
+.spotify-card .podcast-img {
+  border-radius: 5px;
+}
+
+
+/* PLAY AREA */
+
+.play-bar {
+  height: 5em;
+  position:fixed;
+  left: 0; 
+  bottom:0; 
+  background-color:rgb(46, 46, 46); 
+  opacity: 1;
+}
+
+.play-bar span{
+  font-size: 12px;
+}
+
+.play-bar img {
+    margin-right: 20px;
+  }
+  .play-bar .d-flex {
+    color: #fff;
+    margin-top: 10px;
+  }
+  .play-bar > .flex-column {
+    padding: 0 10px;
+  }
+  .play-bar .text-muted {
+    font-size: 10px;
+  }
+  .play-bar .bi-heart {
+    font-size: 12px;
+    color: #fff;
+    padding: 0 5px;
+  }
+  .play-bar .bi-pip {
+    font-size: 12px;
+    color: #fff;
+    padding: 0 5px;
+  }
+  .play-bar img {
+    margin-left: 20px;
+  }
+  .play-bar > .song-bar {
+    margin-bottom: 20px;
+  }
+  
+  .play-bar .song-bar .fa {
+    color: rgb(92, 91, 91);
+    font-size: 1em;
+  }
+  .play-bar .song-bar .bi-arrow-repeat {
+    font-size: 1em;
+    padding: 0 12;
+    color: rgb(92, 91, 91);
+    font-weight: bolder; 
+  }
+  
+  .play-bar .bi-volume-up {
+    padding: 0 5px;
+    font-size: 16px;
+  }
+  .play-bar .bi-speaker {
+    padding: 0 5px;
+    font-size: 16px;
+  }
+  .play-bar .bi-music-note-list {
+    padding: 0 5px;
+    font-size: 16px;
+  }
+  input[type='range'] {
+
+    width: 120px;
+    -webkit-appearance: none;
+    background-color: #686868;
+  }
+  
+  input[type='range']::-webkit-slider-runnable-track {
+overflow: hidden;
+    height: 6px;
+    -webkit-appearance: none;
+    color: #ffffff;
+    margin-top: -1px;
+  }
+  
+  input[type='range']::-webkit-slider-thumb {
+    color:transparent;
+    width: 24px;
+    -webkit-appearance: none;
+    height: 36px;
+    background: #434343;
+    box-shadow: -80px 0 0 80px white;
+    margin-top: -5px;
+    margin-right: 5px;
+    border-radius: 80%;
+  }
+  .band_name{
+    color: rgb(34, 34, 34);
+  }
+
+  .song_info span:hover{
+    color: white;
+    text-decoration: underline;
+    cursor:pointer
+  }
+
+  input[type=range]::-webkit-slider-thumb:hover{
+    background: rgb(40, 179, 40);
+    height:50px;
+    width: 50px
+    overflow
+  }
+
+  input[type=range]:focus::-ms-fill-lower {
+    background: #ac51b5;
+  }
+
+  .fa-play-circle{
+    font-size: 1.8em;
+  }
+
+  .song_bar_icons i:hover{
+    color: white;
+  }
+
+  .play-bar .song-bar .fa:hover{
+    color:white;
+    font-size: 1.2em;
+  }
+  .play-bar .song-bar .bi-arrow-repeat:hover{
+    color:white;
+    font-size: 1.2em;
+    padding:0
+  
+  }
+  .play-bar .song-bar .fa-play-circle{
+    color:white;
+    font-size: 1.5em;
+  }
+
+  /* Album Page Css */
+  .song_aligment{
+    width: 93%;
+  }
+  .song_container{
+    overflow: auto;
+  }
+
+  .col-12 hr{
+    background-color: white;
+  }
+
+  .song_container_background{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.17690826330532217) 0%,
+    rgba(0,0,0,0.5662640056022409) 20%, rgba(0,0,0,0.8519782913165266) 100%);
+  }
+
+  .album_image:hover{
+    animation: magnify 5s infinite;
+  }
+
+  .album_title:hover{
+    color: #3b1539;
+  }
+
+  .album_icons:hover{
+    color: #575757;
+  }
+  .songs:hover{
+    animation: pulse 5s infinite;
+  }
+
+  .play_logo:hover{
+    background-image:url("./assets/spotify_play_btn_hovered.jpg");
+  }
+
+  .dark-mode {
+    background-color: rgb(243, 243, 243);
+    color: rgb(0, 0, 0);
+  }
+
+  @keyframes pulse {
+    0% {
+      background-color: #090316;
+    }
+    100% {
+      background-color: #e4e2e2;
+    }
+  }
+
+  @keyframes magnify {
+    0% {
+      width: 200px;
+      height: 200px;
+    }
+    100% {
+      width: 250px;
+      height: 250px;
+    }
+  }
+
+  
+
+
+
+
+
+
+
+
+/* Chat box styling starts*/
+
+
+  /* Button used to open the chat form - fixed at the bottom of the page */
+  .open-button {
+    color: white;
+    padding: 5px 25px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 5em;
+    right: 28px;
+    width: 100px;
+    border-radius: 10px;
+    background: rgb(29,185,84);
+    background: linear-gradient(90deg, rgba(29,185,84,1) 12%, rgba(8,149,57,1) 37%, rgba(163,163,163,1) 100%);
+  
+  }
+  
+  
+  /* The popup chat - hidden by default */
+  .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 15px;
+    border: 3px solid #158d3f;
+    z-index: 9;
+    border-radius: 2%;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 400px;
+    max-height: 400px;
+    padding: 0px;
+    background-color: rgba(109, 108, 108, 0.795);
+  
+    color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+  }
+  
+  /* Full-width textarea */
+  .form-container textarea {
+    width: 100%;
+    padding: 5px;
+    margin: 0px 0 -7px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 75px;
+    position:relative;
+    bottom:0;
+    left:0;
+  }
+  
+  /* When the textarea gets focus, do something */
+  .form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/send button */
+  .form-container .btn {
+    background-color: #616161;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.8;
+  
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+    position: absolute;
+    top:0;
+    width:25px;
+    height: 25px;
+    right:0;
+    padding:0 !important
+  }
+  .form-container .cancel i{
+    background-color: red;
+    color: silver;
+  
+    width: 36px !important;
+    height: 36px !important;
+  
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+  
+  #send-message{
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    background-color: greenyellow;
+    padding:0 
+  }
+  #send-message i{
+    color: rgb(0, 0, 0);
+    padding: 0 !important
+  }
+  
+  
+  
+  
+  
+  
+  
+  .odds {
+    border: 2px solid #dedede;
+    background-color: #747372;
+  
+  }
+  
+  .row .odds{
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+  }
+  
+  .row .evens{
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+  }
+  
+  .evens {
+    border-color: rgb(83, 83, 83);
+    background-color:#807455;
+  }
+  
+  .row .evens::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  
+  
+  
+  
+  .time-right {
+    float: right;
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .time-left {
+    float: left;
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .chat-history{
+    max-height: 300px;
+    overflow-y: scroll;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: rgb(216, 216, 216);
+  }
+  .chat-head{
+    text-align: center;
+    width: 100%;
+    height: 25px;
+    background-color: #1DB954;
+    position: relative;
+    top:0;
+   padding-bottom: 10px;
+    font-weight: bold;
+  }
+  
+    /* Chat box styling ends*/
+
+

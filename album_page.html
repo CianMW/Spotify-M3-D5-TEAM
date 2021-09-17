@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    /> 
+
+    <!-- Play bar icons --> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous"/> 
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Flavicon -->
+    <link href="./assets/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Spotifour</title>
+    <style>
+      .col{
+        background: rgb(2,0,36);
+        background: linear-gradient(0deg, rgba(2,0,36,1) 43%, #9C367F 100%, rgba(0,212,255,0) 100%)!important;
+        font-family: Montserrat;
+      }
+    </style>
+  </head>
+  <body>
+    
+    
+
+
+  <div class="container-fluid">
+      <div class="row">
+        <div class="col-3 pl-0">
+        <!-- LEFT SIDE NAVIGATION -->
+          
+        <div class="container pr-0 left_navbar">
+          <div class="row">
+            <div class="col-12">
+              <div class="d-flex align-items-center mt-2 mb-4 spotify_logo_section">
+                <img src="./assets/small_white_logo.svg" class="mr-1 spotify_logo"  alt="" width="80">
+                <p class="m-0">Spotifour<sup>®</sup></p>
+              </div>
+            <div class="col-12 p-0">
+              <div class="d-flex flex-column navbar_main_section"> 
+                <div class="d-flex align-items-center sidebar_home active mr-2">
+                  <i class="bi bi-house-door left_nav_icons mr-2"></i>
+                  <p class="m-0 ">Home</p>
+                </div>
+                <div class="d-flex align-items-center sidebar_search">
+                  <i class="bi bi-search left_nav_icons mr-2"></i>
+                  <p class="m-0">Search</p>
+                </div>
+                <div class="d-flex align-items-center sidebar_library">
+                  <i class="bi bi-bookshelf left_nav_icons mr-2"></i>
+                  <p class="m-0">Your Library</p>
+                </div>
+                <div class="d-flex align-items-center mt-4 sidebar_create_playlist">
+                  <div class="playlist_icon" ><i class="bi bi-plus-square-fill left_nav_icons mr-2"></i></div>
+                  <p class="m-0">Create Playlist</p>
+                </div>
+                <div class="d-flex align-items-center sidebar_liked_songs">
+                  <div class="liked_song_icon mr-2"><i class="bi bi-heart-fill left_nav_icons"></i></div>
+                  <p class="ml-0 mb-0">Liked songs</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 p-0 user_playlist mt-3">
+              <div class="d-flex flex-column playlist_border_top pt-3 pr-2">
+                <div class="d-flex"><p class="text_clamp_1">Funky heavy Bluesy</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Your Top Songs 2020</p></div>
+                <div class="d-flex"><p class="text_clamp_1">In Love with you- Erika Badoo</p></div>
+                <div class="d-flex"><p class="text_clamp_1">This is rod Stewart</p></div>
+                <div class="d-flex"><p class="text_clamp_1">FRANCHISE ft Young Thug</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Your Top Songs 2019</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Palleggio</p></div>
+                <div class="d-flex"><p class="text_clamp_1">This is Joe Bonamassa</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Jun 19</p></div>
+                <div class="d-flex justify-content-between"><p class="text_clamp_1">Jack 30th Party 2</p><i class="bi bi-people-fill"></i></div>
+                <div class="d-flex justify-content-between"><p class="text_clamp_1">Jack 30th Party</p><i class="bi bi-people-fill"></i></div>
+                <div class="d-flex justify-content-between"><p class="text_clamp_1">This is Opeth</p><i class="bi bi-people-fill"></i></div>
+                <div class="d-flex justify-content-between"><p class="text_clamp_1">Metal Ballads</p><i class="bi bi-people-fill"></i></div>
+                <div class="d-flex justify-content-between"><p class="text_clamp_1">New Playliist</p><i class="bi bi-people-fill"></i></div>
+                <div class="d-flex"><p class="text_clamp_1">Your Top Songs 2018</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Jazz Classics Blue Note Edition</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Your Top Songs 2018</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Jazz Classics Blue Note Edition</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Your Top Songs 2018</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Jazz Classics Blue Note Edition</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Your Top Songs 2018</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Jazz Classics Blue Note Edition</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Your Top Songs 2018</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Jazz Classics Blue Note Edition</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Your Top Songs 2018</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Jazz Classics Blue Note Edition</p></div>
+              </div>
+            </div>
+            <div class="d-flex p download_app_section mt-2 mb-2">
+              <i class="bi bi-arrow-down-circle mr-2 "></i>
+              <p class="m-0">Install App</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- LEFT SIDE NAVIGATION END -->
+
+      <!-- MAIN SECTION AREA -->
+
+      <div class="col">
+      
+          <div class="row">
+                <!-- TOP NAVBAR -->
+                <div class="col-12 sticky-top">
+                  <div class="d-flex justify-content-between mt-3">
+                    <div class="d-flex">
+                      <div class="nav-arrow-bg mr-2">
+                        <i class="bi arrow_icon bi-chevron-left"></i>
+                      </div>
+                      <div class="nav-arrow-bg">
+                        <i class="bi arrow_icon bi-chevron-right"></i>
+                      </div>
+                    </div>
+    
+                    <div class="d-flex align-items-center avatar-pill rounded-pill">
+                      <div class="pl-1 mr-1">
+                        <img src="./assets/small_profile_picture.jpg" class="profile_picture" width="25" height="25" alt="">
+                      </div>
+                      <div class="dropdown-toggle pr-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          John Döner 'Alle Gemuse' Kebab
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" onclick=location.href="./index.html" >Homepage</a>
+                              <a class="dropdown-item" onclick=location.href="./artist_page.html">Artist Page</a>
+                              <a class="dropdown-item" onclick=location.href="./album_page.html" >Log-in Page</a>
+                              <a class="dropdown-item" onclick=location.href="./404-custom.html">404</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- END OF TOP NAVBAR -->
+              <div class="col-12 mt-5 text-white">
+              <div class="d-flex" >
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71WVq7VqUkL._SL1260_.jpg" class="album_image" width="200" height="200" alt="">
+                <div  class="ml-3 align-self-end">
+                  <h6 class="album_title">Album</h6>
+                  <h2 class="album_title "><b>Bohemian Rhapsody(The Original Soundtrack)</b><p id="demo"></p></h2>
+                  <div class="d-flex">
+                    <img src="./assets/small_profile_picture.jpg" class="profile_picture" width="25" height="25" alt="">
+                    <h6 class="ml-1 mr-1 album_title">Queen</h6>
+                    <p class="album_title"><span class="mr-1 ml-1">&sdot;</span>2019<span class="mr-1 ml-1 ">&sdot;</span>22 songs, 1hr 19min</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 pl-0 song_container_background mt-4">
+              <div class="col-12 mt-5">
+                <div class="text-white h3 d-flex align-items-center" >
+                  <img src="./assets/spotify_play_btn.jpg" class="profile_picture play_logo" width="50" height="50" alt="">
+                  <i class="bi bi-heart ml-3 album_icons " ></i>
+                  <i class="bi bi-three-dots ml-3 album_icons"></i>
+                  <button class="btn-info ml-5" style="font-size: small;" onclick="toggleMode()">Toggle mode</button>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="text-white d-flex justify-content-between" >
+                  <p>#</p>
+                  <p class="song_aligment">Title</p>
+                  <div id="hourglass" class="fa"></div>
+                </div>
+                <hr>
+              </div>
+              <div class="col-12 song_container" >
+                <div class="d-flex text-white justify-content-between">
+                  <p>1</p>
+                  <div class="song_aligment">
+                    <p class="mb-0 songs">20th Century Fox Hanfare <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i></p>
+                      <p class="songs">Queen </p>  
+                    </div>
+                  <p>0:25</p>                
+                </div>
+                <div class="d-flex text-white justify-content-between">
+                  <p>2</p>
+                  <div class="song_aligment">
+                    <p class="mb-0 songs">Somebody to love <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i></p>
+                      <p class="songs">Queen</p>
+                    </div>
+                  <p>04:55</p>                
+                </div>
+                <div class="d-flex text-white justify-content-between">
+                  <p>3</p>
+                  <div class="song_aligment">
+                    <p class="mb-0 songs">Doing All Right - ...Revisited <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i></p>
+                      <p class="songs">Queen</p>
+                    </div>
+                  <p>03:16</p>                
+                </div>
+                <div class="d-flex text-white justify-content-between">
+                  <p>5</p>
+                  <div class="song_aligment">
+                    <p class="mb-0 songs">Killer Queen <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i></p>
+                      <p class="songs">Queen</p>
+                    </div>
+                  <p>02:59</p>                
+                </div>
+                <div class="d-flex text-white justify-content-between">
+                  <p>6</p>
+                  <div class="song_aligment">
+                    <p class="mb-0 songs">Fat Bottomed Girls - Live in Paris <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i></p>
+                      <p class="songs">Queen</p>
+                    </div>
+                  <p>04:37</p>                
+                </div>
+                <div class="d-flex text-white justify-content-between">
+                  <p>7</p>
+                  <div class="song_aligment">
+                    <p class="mb-0 songs">Bohemiam Rhapsody <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i></p>
+                      <p class="songs">Queen</p>
+                    </div>
+                  <p>05:54</p>                
+                </div>
+                <div class="d-flex text-white justify-content-between">
+                  <p>8</p>
+                  <div class="song_aligment">
+                    <p class="mb-0 songs">Now I'm Here - Live at The Hammersmith Odeon <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i></p>
+                      <p class="songs">Queen</p>
+                    </div>
+                  <p>04:25</p>                
+                </div>
+                <div class="d-flex text-white" style="justify-content: space-between;;">
+                  <p>9</p>
+                  <div class="song_aligment">
+                    <p class="mb-0 songs">Crazy Little Thing Called Love <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i></p>
+                      <p class="songs">Queen</p>
+                    </div>
+                  <p>02:43</p>                
+                </div>
+                <div class="d-flex text-white" style="justify-content: space-between;;">
+                  <p>10</p>
+                  <div class="song_aligment">
+                    <p class="mb-0 songs">Crazy Little Thing Called Love II <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i></p>
+                      <p class="songs">Queen</p>
+                    </div>
+                  <p>03:43</p>                
+                </div>
+                <div class="d-flex text-white" style="justify-content: space-between;;">
+                  <p>11</p>
+                  <div class="song_aligment">
+                    <p class="mb-0 songs">Crazy Little Thing Called Love III <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i></p>
+                      <p class="songs">Queen</p>
+                    </div>
+                  <p>03:43</p>                
+                </div>
+                <div class="d-flex text-white" style="justify-content: space-between;;">
+                  <p>12</p>
+                  <div class="song_aligment">
+                    <p class="mb-0 songs">Crazy Little Thing Called Love IV <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i></p>
+                      <p class="songs">Queen</p>
+                    </div>
+                  <p>03:43</p>                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+          </div>
+      </div>
+    </div>
+    <!-- MAIN SECTION END -->
+      </div>
+    </div>
+
+      <div class="container-fluid play-bar d-inline-block p-0">
+          <div class="row d-flex align-items-center">
+
+            <div class="col-4 d-flex mt-0">
+              <img src="./assets/queen.jpeg" width="50px" height="50px" />
+              <div class="d-flex align-items-center mt-0">
+              <div class="d-flex flex-column song_info">
+                <span>Another One Bites The Dust Remastered 2011</span>
+                <span class="band_name">Queen</span>
+              </div>
+              <div class="ml-5">
+              <i class="bi bi-heart"></i>
+              <i class="bi bi-pip"></i>
+            </div>
+          </div>
+          </div>
+            <div class="col-5 align-items-center song-bar">
+              <div class="row justify-content-center align-items-center song_bar_icons">
+                <!---Icons-->
+                <i
+                  class="fa fa-random px-2"
+                  style="padding-left: 15px; padding-right: 15px"
+                ></i>
+                <i
+                  class="fa fa-step-backward px-2 "
+                  style="padding-left: 15px; padding-right: 15px"
+                ></i>
+                <i
+                  class="fa fa-play-circle px-2 play_button"
+                  style="padding-left: 15px; padding-right: 15px"
+                ></i>
+                <i
+                  class="fa fa-step-forward px-2 "
+                  style="padding-left: 15px; padding-right: 15px"
+                ></i>
+                <i class="bi bi-arrow-repeat px-2"></i>
+              </div>
+              <div class="row justify-content-center">
+                <!---Song time-->
+                <progress
+                  max="5"
+                  value="2"
+                  style="width: 82%;"
+                ></progress>
+              </div>
+            </div>
+
+            <div class="col-3 d-inline-block">
+              <div class="row align-items-center justify-content-end">
+            <!---    
+                <i class="bi bi-volume-down"></i>
+            
+                <i class="bi bi-volume-mute"></i> --->
+              <i class="bi bi-music-note-list"></i>         
+              <i class="bi bi-speaker"></i> 
+              <i class="bi bi-volume-up"></i>
+                  <!---volume slider-->
+                  <div class="form-group d-inline-block">
+                    <label for="formControlRange"> </label>
+
+                    <input
+                      type="range"
+                      class="form-control-range"
+                      id="formControlRange"
+                    />
+                  </div>
+                <i class="bi bi-list-starts px-2"></i>
+                <i class="bi bi-arrows-angle-expand"> </i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="open-button" onclick="openForm()"><span>Chat</span></button>
+
+        <div class="chat-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <div class="container chat-head">
+                <p>Live-Message</p>
+            </div>
+
+
+          <!---messages start-->
+        <div class="container chat-history">
+          <div class="chat-log-contain ">
+      
+          <div class="row  odds">
+            <div class="col-19 align-items-center indent-left-1"><p>Hey how's the build week going?</p>
+              <span class="time-right">11:00</span></div>
+                <div class="col-2 d-flex align-items-center pr-0"><img src="assets/one-punch-man-ok.jpeg" width="40px" height="40px" style="border-radius:50%" > </div>
+          </div>
+          
+          <div class="row evens">
+            <div class="col-2 d-flex align-items-center px-0"><img src="assets/Bogdan.png" width="40px" style="border-radius:50%" > </div>
+           <div class="col-10"><p>Hey! not too bad!</p>
+            <span class="time-left">11:01</span></div>
+
+          </div>
+          
+          <div class="row odds">
+
+           <div class="col-10"><p>That's good , so are you nearly done?</p>
+          <span class="time-right">11:01</span></div>
+            <div class="col-2 d-flex align-items-center px-0"><img src="assets/one-punch-man-ok.jpeg" width="40px" height="40px" style="border-radius:50%" > </div>
+          </div>
+          
+          <div class="row justify-content-center align-items-center evens">
+            <div class="col-2 d-flex align-items-center px-0"><img src="assets/Bogdan.png" width="40px" style="border-radius:50%" > </div>
+           <div class="col-10"><p>hah! not even close lol</p>
+            <span class="time-left">11:05</span></div>
+           
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+          <!---messages end-->
+
+            <textarea placeholder="Type here.." name="msg" id="textMessageBox" required></textarea>
+            <div class="d-flex">
+            <button id="send-message" type="button" class="btn" onclick="sendMessage()"><i class="bi bi-arrow-right-square"></i></button>
+            
+            </div> 
+            <button type="button" class="btn cancel" onclick="closeForm()"><i class="bi bi-x-square"></i></button>
+        </form>
+        </div>
+                  <!---chat box functions-->
+                  <script>
+                  function openForm() {
+                    document.getElementById("myForm").style.display = "block";
+                  }
+          
+                  function closeForm() {
+                    document.getElementById("myForm").style.display = "none";
+                  }
+          
+                  function sendMessage() {
+                
+          
+                  let newDivRow = document.createElement("div");
+                  newDivRow.classList.add("row");
+                  newDivRow.classList.add("odds");
+          
+                  let newMessageArea = document.createElement("div");
+          
+          
+                  newMessageArea.classList.add("col-10");
+                  let messageText = document.createElement("p");
+                  let messageTime = document.createElement("span");
+                  messageTime.classList.add("time-right")
+          
+          
+                  let newAvatar = document.createElement("div");
+                  newAvatar.classList.add("col-2");
+                  newAvatar.classList.add("align-items-center");
+                  newAvatar.classList.add("d-flex");
+                  newAvatar.classList.add("px-0");
+          
+                  let newImageNode = document.createElement("img");
+          
+                  newImageNode.setAttribute("src", "assets/one-punch-man-ok.jpeg");
+                  newImageNode.setAttribute("width", "40");
+                  newImageNode.setAttribute("height","40");
+                  newImageNode.setAttribute("style","border-radius:50%")
+                  let currentMessage = document.getElementById("textMessageBox").value;
+                  messageText.innerHTML = currentMessage;
+                  messageTime.innerHTML = "now";
+                  newMessageArea.appendChild(messageText);
+                  newMessageArea.appendChild(messageTime);
+                  newDivRow.appendChild(newMessageArea);
+                  newAvatar.appendChild(newImageNode);
+                  newDivRow.appendChild(newAvatar);
+                  document.querySelector("div.container .chat-log-contain").appendChild(newDivRow)
+                  document.getElementById("textMessageBox").value = ""
+                          }
+          
+                  </script>
+                    <!---chat box functions-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      /* ------------------------------ */
+      function myFunction(x) {
+         x.classList.toggle("fa-thumbs-down");
+      }
+      /* ------------------------------ */
+
+      function hourglass() {
+      var a;
+      a = document.getElementById("hourglass");
+      a.innerHTML = "&#xf251;";
+      setTimeout(function () {
+          a.innerHTML = "&#xf252;";
+        }, 1000);
+      setTimeout(function () {
+          a.innerHTML = "&#xf253;";
+        }, 2000);
+        }
+        hourglass();
+        setInterval(hourglass, 3000);
+      /* ------------------------------ */
+
+
+        // Set the date we're counting down to
+        var countDownDate = new Date("September 10, 2021 18:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+          // Get today's date and time
+          var now = new Date().getTime();
+
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          // Display the result in the element with id="demo"
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+
+          // If the count down is finished, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+
+      /* ------------------------------ */
+
+      function toggleMode() {
+       let element = document.querySelector(".song_container_background")
+       element.classList.toggle("dark-mode")
+      }
+
+      /* ------------------------------ */
+
+
+    </script>
+  </body>
+</html>
