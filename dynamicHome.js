@@ -176,7 +176,7 @@ fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q="+query, {
                   <p class="text_clamp_2">${obj.artist.name}</p>
                 </div>
               </div>`
-              showsToTryNode.onlick = () => {
+              showsToTryNode.onclick = () => {
                 window.location.assign("./album_page.html?id=" + obj.album.id)
               }
               
