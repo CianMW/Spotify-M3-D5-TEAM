@@ -181,6 +181,7 @@
                   <!-- END OF GOOD MORNING SECTION -->
     
                   <!-- RECENTLY PLAYED SECTION -->
+                
                   <div class="col-12">
                     <!-- Recently played-->
                   <div class="d-flex justify-content-between align-items-center mt-3">
@@ -190,7 +191,7 @@
                   <div class="w-100 recently-played-container">
     
                     <!-- One card-->
-                    <div class="spotify-card d-flex flex-column" >
+                    <div class="spotify-card d-flex flex-column" id="album-card" >
                       <div class="p-2">
                         <div>
                           <img src="https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-500-Arcade-Fire-Funeral.jpg?w=1000" alt="">
@@ -203,7 +204,7 @@
                     </div>
                     <!-- One card end-->
                     <!-- One card-->
-                    <div class="spotify-card d-flex flex-column" >
+                    <div class="spotify-card d-flex flex-column" id="album-card" >
                       <div class="p-2">
                         <div>
                           <img src="https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-499-Ask-Rufus-Rufus-Chaka-Khan.jpg?w=800" alt="">
@@ -216,7 +217,7 @@
                     </div>
                     <!-- One card end-->
                     <!-- One card-->
-                    <div class="spotify-card d-flex flex-column" >
+                    <div class="spotify-card d-flex flex-column" id="album-card" >
                       <div class="p-2">
                         <div>
                           <img src="https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-498-Suicide-Suicide.jpg?w=800" alt="">
@@ -229,7 +230,7 @@
                     </div>
                     <!-- One card end -->
                     <!-- One card-->
-                    <div class="spotify-card d-flex flex-column" >
+                    <div class="spotify-card d-flex flex-column" id="album-card" >
                       <div class="p-2">
                         <div class="d-flex justify-content-center align-items-center liked-songs">
                           <i class="bi bi-heart-fill"></i>
@@ -242,7 +243,7 @@
                     </div>
                     <!-- One card end -->
                     <!-- One card-->
-                    <div class="spotify-card d-flex flex-column" >
+                    <div class="spotify-card d-flex flex-column" id="album-card" >
                       <div class="p-2">
                         <div>
                           <img src="https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-497-Indestructible-Beat-of-Soweto.jpg?w=800" alt="">
@@ -255,7 +256,7 @@
                     </div>
                     <!-- One card end -->
                     <!-- One card-->
-                    <div class="spotify-card d-flex flex-column" >
+                    <div class="spotify-card d-flex flex-column" id="album-card" >
                       <div class="p-2">
                         <div>
                           <img src="https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-496-Shakira-Donde-Estan-los-Ladrones.jpg?w=800" alt="">
@@ -268,7 +269,7 @@
                     </div>
                     <!-- One card end -->
                     <!-- One card-->
-                    <div class="spotify-card d-flex flex-column" >
+                    <div class="spotify-card d-flex flex-column" id="album-card" >
                       <div class="p-2">
                         <div>
                           <img src="https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-495-Boyz-II-Men-II.jpg?w=800" alt="">
@@ -281,7 +282,7 @@
                     </div>
                     <!-- One card end -->
                     <!-- One card-->
-                    <div class="spotify-card d-flex flex-column" >
+                    <div class="spotify-card d-flex flex-column" id="album-card" >
                       <div class="p-2">
                         <div>
                           <img src="https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-494-THE-RONETTEs-Presenting-the-Fabulous-Ronettes.jpg?w=800" alt="">
@@ -294,7 +295,7 @@
                     </div>
                     <!-- One card end -->
                     <!-- One card-->
-                    <div class="spotify-card d-flex flex-column" >
+                    <div class="spotify-card d-flex flex-column" id="album-card" >
                       <div class="p-2">
                         <div>
                           <img src="https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-493-Marvin-Gaye-Here-My-Dear.jpg?w=800" alt="">
@@ -307,7 +308,7 @@
                     </div>
                     <!-- One card end -->
                     <!-- One card-->
-                    <div class="spotify-card d-flex flex-column" >
+                    <div class="spotify-card d-flex flex-column" id="album-card" >
                       <div class="p-2">
                         <div>
                           <img src="https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-492-Bonnie-Raitt-Nick-of-Time.jpg?w=800" alt="">
@@ -674,5 +675,32 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+
+      const loadAlbums = (query = "music") => {
+        fetch("https://striveschool-api.herokuapp.com/api/deezer/album/album_id_here" + query, {
+          method: "GET",
+          headers: {
+            Authorization: "0c20b1c2fd4a50d41fe27a3bc72e04aee2184c17"
+          }
+        })
+
+        .then(resp => resp.json())
+        .then(data => console.log(data))
+
+        const row = document.querySelector("#album-card");
+        row.innerHTML = "";
+
+        
+
+      }
+
+      window.onload = () => {
+        loadAlbums()
+        console.log()
+      }
+
+    </script>
   </body>
 </html>
