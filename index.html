@@ -46,7 +46,7 @@
                   <i class="bi bi-house-door left_nav_icons mr-2"></i>
                   <p class="m-0">Home</p>
                 </div>
-                <div class="d-flex align-items-center sidebar_search">
+                <div class="d-flex align-items-center sidebar_search" onclick=location.href="./search.html">
                   <i class="bi bi-search left_nav_icons mr-2"></i>
                   <p class="m-0">Search</p>
                 </div>
@@ -108,7 +108,7 @@
 
       <div class="col">
       
-          <div class="row pr-3">
+          
                 <!-- TOP NAVBAR -->
                 <div class="col-12 sticky-top">
                   <div class="d-flex justify-content-between mt-3">
@@ -132,11 +132,13 @@
                               <a class="dropdown-item" onclick=location.href="./artist_page.html">Artist Page</a>
                               <a class="dropdown-item" onclick=location.href="./loginpage/index.html" >Log-in</a>
                               <a class="dropdown-item" onclick=location.href="./404-custom.html">404</a>
+                              <a class="dropdown-item" onclick=location.href="./search.html">Search</a>
                             </div>
                         </div>
                     </div>
                   </div>
                 </div>
+              <div class="row pr-3" id="main-container">
                 <!-- END OF TOP NAVBAR -->
                 <!-- GOOD MORNING SECTION -->
                 <div class="col-12 mt-3">
@@ -674,5 +676,7 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+    <script
+    src="dynamicHome.js"></script>
   </body>
 </html>
