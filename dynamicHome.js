@@ -122,7 +122,7 @@ fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q="+query, {
 
 
 //START of SHOWS TO TRY section
-function loadRecentlyPlayed(query){
+function loadShowsToTry(query){
 
 
 fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q="+query, {
@@ -141,12 +141,14 @@ fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q="+query, {
     let recentlyPlayedSection = document.createElement("div")
         recentlyPlayedSection.className = "col-12 "
         recentlyPlayedSection.innerHTML = `
-            <div class="d-flex justify-content-between align-items-center mt-3">
-                <h3>Recently played</h3>
-                <h6>SEE ALL</h6>
-            </div>
-            <div class="w-100 recently-played-container">
-                </div>`
+        <div class="d-flex justify-content-between align-items-center mt-3">
+        <div>
+          <h3 class="my-0">Shows to try</h3>
+          <p class="my-0">Podcasts we think you'll get hooked on.</p>
+        </div>
+        <h6>SEE ALL</h6>
+      </div>
+      <div class="w-100 mt-3 shows-to-try-container"></div>`
 
         document.querySelector("#main-container").appendChild(recentlyPlayedSection)
 
@@ -154,21 +156,21 @@ fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q="+query, {
         for (let i = 0; i < 9; i++) {
             let obj = body.data[i];
                 
-            let newRecentlyPlayedNode = document.createElement("div")
-                newRecentlyPlayedNode.className = "spotify-card d-flex flex-column"
-                newRecentlyPlayedNode.id= `${obj.album.id}`
-                newRecentlyPlayedNode.innerHTML = `    
+            let showsToTryNode = document.createElement("div")
+                showsToTryNode.className = "spotify-card d-flex flex-column"
+                showsToTryNode.id= `${obj.album.id}`
+                showsToTryNode.innerHTML = `    
                 <div class="p-2">
                 <div>
-                  <img src="${obj.album.cover_medium}" alt="">
+                  <img src="${obj.album.cover_medium}" alt="" class="podcast-img">
                 </div>
                 <div class="mt-2">
-                  <h6 class="text_clamp_1">${obj.album.title}</h6>
+                  <h6 class="text_clamp_1">${obj.title}</h6>
                   <p class="text_clamp_2">${obj.artist.name}</p>
                 </div>
               </div>`
                 
-                document.querySelector(".recently-played-container").appendChild(newRecentlyPlayedNode)
+                document.querySelector(".shows-to-try-container").appendChild(showsToTryNode)
             }
 
 })
@@ -210,3 +212,4 @@ fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q="+query, {
 
 loadMorningSection("eminem")
 loadRecentlyPlayed("Metallica")
+loadShowsToTry("podcast")
