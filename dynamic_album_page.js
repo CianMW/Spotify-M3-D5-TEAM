@@ -2,40 +2,38 @@ window.onload = () => {
   const id = new URLSearchParams(window.location.search).get("id");
   console.log(id);
 
-  fetch("https://deezerdevs-deezer.p.rapidapi.com/album/" + id, {
+  fetch("https://striveschool-api.herokuapp.com/api/deezer/album/" + id, {
     method: "GET",
     headers: {
       "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
       "x-rapidapi-key": "c0dbb0022bmshdac5721511fc351p152251jsndd5434dfa369",
     },
   })
-    .then((resp) => resp.json())
+    .then(resp => resp.json())
     .then((data) => {
       console.log({ data });
 
       const albumCont = document.querySelector("#album-cont");
       albumCont.innerHTML = "";
+      
 
-      // for (let i = 0; i < body.length; i++) {
-      //     const album = body[i];
-      //     console.log({album});
+      /* for (let i = 0; i < body.length; i++) {
+          const album = body[i];
+          console.log({album}); */
 
           albumCont.innerHTML += `
 
-      <div class="container-fluid">
-          <div class="row">
-              <div class="col-3 pl-0">
 
-              <div class="container col-12 mt-5 text-white" id="album-cont">
-              <div class="d-flex" >
-                <img src="${album.cover_medium}" class="album_image" width="200" height="200" alt="">
+              <div class="container col-12 mt-5 text-white">
+              <div class="d-flex">
+                <img src="${data.cover_medium}" class="album_image" width="200" height="200" alt="">
                 <div  class="ml-3 align-self-end">
                   <h6 class="album_title">Album</h6>
-                  <h2 class="album_title "><b>${album.title}</b><p id="demo"></p></h2>
+                  <h2 class="album_title "><b>${data.title}</b><p id="demo"></p></h2>
                   <div class="d-flex">
                     <img src="./assets/small_profile_picture.jpg" class="profile_picture" width="25" height="25" alt="">
-                    <h6 class="ml-1 mr-1 album_title">${album.artist.name}</h6>
-                    <p class="album_title"><span class="mr-1 ml-1">&sdot;</span>${album.release_date}<span class="mr-1 ml-1 ">&sdot;</span>${album.nb_tracks} songs, ${album.duration}</p>
+                    <h6 class="ml-1 mr-1 album_title">${data.artist.name}</h6>
+                    <p class="album_title"><span class="mr-1 ml-1">&sdot;</span>${data.release_date}<span class="mr-1 ml-1 ">&sdot;</span>${data.nb_tracks} songs, ${data.duration}</p>
                   </div>
                 </div>
               </div>
@@ -69,13 +67,10 @@ window.onload = () => {
 
               </div>
             </div>
-          </div>
-        </div>
-      </div>
 
       `
 
-      albumCont.appendChild(album)
+      /* albumCont.appendChild("#album-cont") */
     })
     .catch((err) => {
       console.error(err.message);
